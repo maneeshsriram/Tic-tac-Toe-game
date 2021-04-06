@@ -25,3 +25,25 @@ body {
   transform: scale(1.1);
   transition: all 300ms ease-out;
 }
+
+.heading {
+  animation-duration: 5s;
+}
+
+.icons {
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+}
+
+.turn {
+  animation: turns 3s;
+}
+
+@keyframes turns {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
