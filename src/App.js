@@ -103,7 +103,7 @@ function App() {
             <div className="row">
 
               {itemsBox.map((item, index) => (
-                <div className="col-md-4 animate__animated animate__bounceIn icons" onClick={() => writeItem(index)}>
+                <div key={index} className="col-4 animate__animated animate__bounceIn icons" onClick={() => writeItem(index)}>
                   <Icons name={item} />
                 </div>
               ))
